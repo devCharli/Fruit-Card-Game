@@ -1,4 +1,4 @@
-export const imgs = [
+export const photos_1 = [
   { src: "/img/banana.png", word: "banana", matched: false },
   { src: "/img/cherry.png", word: "cherry", matched: false },
   { src: "/img/grape.png", word: "grape", matched: false },
@@ -6,7 +6,7 @@ export const imgs = [
   { src: "/img/mango.png", word: "mango", matched: false },
 ];
 
-export const imgs2 = [
+export const photos_2 = [
   { src: "/img/orange.png", word: "orange", matched: false },
   { src: "/img/pear.png", word: "pear", matched: false },
   { src: "/img/strawberry.png", word: "strawberry", matched: false },

@@ -1,13 +1,40 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 100px auto;
+  @apply flex flex-col items-center p-8;
+}
+
+.title {
+  @apply text-black font-extrabold text-3xl tracking-widest p-4;
+}
+
+/* new game button */
+
+.newGame_btn {
+  @apply py-3 px-6 text-2xl cursor-pointer my-6 bg-lime-300 text-black border border-black shadow-offset-black;
+}
+
+.newGame_btn:hover {
+  @apply shadow-hover-offset-black;
+}
+
+/* game set select */
+
+.gameSet_container {
+  @apply inline-block relative w-64;
+}
+
+.gameSet_select {
+  @apply block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none;
+}
+
+/* pointer inside select */
+.pointer {
+  @apply pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700;
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  padding: 40px 0;
+  @apply grid grid-cols-5 gap-3 p-16;
+}
+
+.turns {
+  @apply px-6 text-2xl text-black border-b-8 border-lime-500;
 }

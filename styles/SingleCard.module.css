@@ -1,11 +1,13 @@
 .card img {
-  display: block;
-  /* width: 100%; */
-  border-radius: 6px;
+  @apply block;
 }
 
 .card {
-  display: relative;
+  @apply relative cursor-pointer;
+}
+
+.card:hover {
+  @apply rotate-3;
 }
 
 .card .front {
